@@ -19,16 +19,6 @@ public class SwaggerConfig {
     }
 }
 --------------------------
-configuration without spring boot add in configuration class
-@Override
-public void addResourceHandlers(ResourceHandlerRegistry registry) {
-    registry.addResourceHandler("swagger-ui.html")
-      .addResourceLocations("classpath:/META-INF/resources/");
- 
-    registry.addResourceHandler("/webjars/**")
-      .addResourceLocations("classpath:/META-INF/resources/webjars/");
-}
-----------------------------
 check json
 http://localhost:8080/Spring4MVCAngularJSExample/api/v2/api-docs
 ----------------------------
@@ -40,5 +30,5 @@ Springfox's swagger-ui
 </dependency>
 -----------------------------
 explore documentation
-http://petstore.swagger.io/#/user-controller
+http://petstore.swagger.io/
 http://localhost:8080/Spring4MVCAngularJSExample/v2/api-docs
